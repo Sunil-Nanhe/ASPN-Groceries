@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0000FF"
+    tools:context=".HomeActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/topcircal"
+        app:cardBackgroundColor="#80FFFFFF"
+        app:cardCornerRadius="250dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="150dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="250dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="225dp"
+                android:layout_height="225dp"
+                app:cardBackgroundColor="#33FFFFFF"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="250dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/homeicon"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:id="@+id/userlog"
+        android:layout_below="@id/topcircal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signin"
+            android:text="Sign-In"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seperate"
+            android:text="/"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup"
+            android:text="Sign-Up"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userlog"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="90dp"
+        android:text="Now all the groceries are available to your doors"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
