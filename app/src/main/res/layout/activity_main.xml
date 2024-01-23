@@ -64,9 +64,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
+                android:layout_gravity="bottom"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:textColor="@color/white"
+                android:backgroundTint="#00FFFFFF"
                 android:inputType="text"/>
 
         </androidx.cardview.widget.CardView>
@@ -92,6 +94,8 @@
                 android:textColor="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#00FFFFFF"
                 android:inputType="textPassword"/>
 
         </androidx.cardview.widget.CardView>

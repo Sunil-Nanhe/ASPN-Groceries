@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily"
+        android:id="@+id/Daily"
+        android:textColor="#0000FF"
+        android:textSize="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GrocerFood"
+        android:text="Grocery Food"
+        android:textColor="#0000FF"
+        android:textSize="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/Daily"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popular"
+        android:text="Popular Dairies"
+        android:layout_below="@id/GrocerFood"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:backgroundTint="#1A000000"
+        android:textColor="#0000FF"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/GrocerFood"
+        android:layout_alignParentRight="true"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:id="@+id/firstiteam"
+        android:layout_below="@id/popular"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/milk"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milk"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹65.00/ltr."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:id="@+id/seconditem"
+        android:layout_below="@id/popular"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ghee"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghee"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹325.00/kg."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/firstiteam"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:background="@drawable/butter"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Butter"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹525.00/kg."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="165dp"
+        android:layout_height="200dp"
+        android:id="@+id/fourthitem"
+        android:layout_below="@id/seconditem"
+        android:layout_marginStart="25dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bread"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bread"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="35dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹65.00/pack"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            android:textStyle="bold"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_top_corner">
+
+
+
+
+    </View>
+
+
+
+
+</RelativeLayout>

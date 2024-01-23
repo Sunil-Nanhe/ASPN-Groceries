@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="@color/white"
     tools:context=".FirstPageActivity">
-
-
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:id="@+id/top"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:cardCornerRadius="10dp"
         app:cardBackgroundColor="#0000FF">
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="45dp"
@@ -30,36 +29,16 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/settings_white"
+                android:background="@drawable/settings"
                 android:layout_gravity="center"/>
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="10dp"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="#33FFFFFF">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/account_box_white"/>
-
-        </androidx.cardview.widget.CardView>
-
-
-
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome,"
-            android:layout_marginLeft="65dp"
+            android:text="Welcome to,"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:textStyle="italic"
             android:textColor="@color/white"
@@ -69,12 +48,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/usertitle"
+            android:text="ASPN Groceries"
             android:layout_marginTop="35dp"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="15dp"
             android:textSize="22dp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -97,86 +76,439 @@
                 android:layout_marginTop="9dp"
                 android:background="@drawable/search"/>
 
-
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Search"
+                android:gravity="bottom"
+                android:backgroundTint="@color/cardview_light_background"/>
 
         </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/Category"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="430dp"
-        android:id="@+id/recyclerview"
+        android:layout_height="100dp"
+        android:id="@+id/c1"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/top"/>
+        android:layout_below="@id/Category">
 
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/dairy"
+                android:layout_gravity="center"
+                android:background="@drawable/circlular_outline"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/juices"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_juice"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/snaks"
+                android:layout_gravity="center"
+                android:background="@drawable/cicular_snacks"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/drinks"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_drinks"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorytext"
+        android:layout_below="@id/c1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dairy"
+            android:textSize="15dp"
+            android:layout_marginStart="45dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juice"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snaks"
+            android:textSize="15dp"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drinks"
+            android:textSize="15dp"
+            android:layout_marginStart="43dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/c2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/categorytext">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cicular_vegies"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_staples"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_fruits"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/grain_circular"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegitables"
+            android:textSize="15dp"
+            android:layout_marginStart="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dry Fruits"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruits"
+            android:textSize="15dp"
+            android:layout_marginStart="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grain"
+            android:textSize="15dp"
+            android:layout_marginStart="45dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deals"
+        android:text="Super Deals"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@id/c2"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/deals">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="02dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chocolate">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50% OFF"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="CHOCOLATE"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/peanut_butter">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUY 2 GET 1 FREE"
+                android:layout_gravity="right"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="PEANUT BUTTER"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="bottom"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/almonds">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30% OFF"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="ALMONDS"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_alignParentBottom="true"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="0dp"
-        app:cardBackgroundColor="#330000FF">
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#0000FF"
+        android:layout_alignParentBottom="true">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            app:cardElevation="0dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_gravity="center"
-            app:cardBackgroundColor="#4D0000FF"
-            app:cardCornerRadius="35dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="3dp"
-                android:background="@drawable/home"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/square_heart" />
 
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/notification_box" />
 
-        </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/home_box" />
 
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/shopping_cart_box" />
 
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/shopping_bag"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/profile_box" />
 
-
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/notifications"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="80dp"/>
-
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/favorite"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="10dp"/>
-
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/message"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="13dp"/>
-
-
-
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 </RelativeLayout>

@@ -27,9 +27,22 @@
 
 
         <activity android:name=".RegisterActivity"></activity>
-        <activity
-            android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".FirstPageActivity"></activity>
+        <activity android:name=".ActivityDairy"></activity>
+        <activity android:name=".ActivityJuice"></activity>
+        <activity android:name=".ActivitySnaks"></activity>
+        <activity android:name=".ActivityDrinks"></activity>
+        <activity android:name=".ActivityMilkInfo"></activity>
+        <activity android:name=".ActivityGhee"></activity>
+        <activity android:name=".ActivityButter"></activity>
+
+
+
+
+
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@drawable/rounded_bottom_white">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Product"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/_shopping_cart_black"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/milkimg"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ghee"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghee"
+            android:id="@+id/textmilk"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@id/milkimg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹300.00/ KG"
+            android:id="@+id/rate"
+            android:layout_below="@id/textmilk"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100% COW’S PURE GHEE WITH DELICIOUS TASTE &amp; AROMA: From the brand that you love and trust, Suhana Cow Ghee is 100% pure and comes to you after going through a stringent quality process. It is made from pure Cow Milk, which gives it a natural golden color. It is made from fresh cream and has a deliciously rich aroma and granular texture."
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_below="@id/rate"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:text="BUY"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:text="CART"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
