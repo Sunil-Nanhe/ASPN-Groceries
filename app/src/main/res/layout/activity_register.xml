@@ -18,7 +18,7 @@
         android:textStyle="bold"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:textColor="#0000FF"/>
+        android:textColor="#007500"/>
 
 
     <TextView
@@ -54,7 +54,7 @@
         app:cardElevation="0dp"
         app:cardPreventCornerOverlap="true"
         android:background="@drawable/rounded_top_corner"
-        app:cardBackgroundColor="#0000FF">
+        app:cardBackgroundColor="#00A300">
 
 
     <androidx.cardview.widget.CardView
@@ -119,6 +119,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="#007500"
         android:layout_marginStart="15dp"
         app:cardCornerRadius="10dp">
 
@@ -127,7 +128,8 @@
             android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/cardview_light_background"
+            android:backgroundTint="#007500"
+            android:textColor="@color/white"
             android:text="SIGN-UP"/>
 
     </androidx.cardview.widget.CardView>

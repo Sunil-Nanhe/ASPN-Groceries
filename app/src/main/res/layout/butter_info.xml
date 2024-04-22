@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0000FF"
+    android:background="#007500"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
@@ -97,7 +97,7 @@
             android:layout_width="125dp"
             android:layout_height="55dp"
             android:layout_marginEnd="15dp"
-            android:textColor="#0000FF"
+            android:textColor="#007500"
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:text="BUY"/>
@@ -106,7 +106,7 @@
             android:layout_width="125dp"
             android:layout_height="55dp"
             android:layout_marginStart="15dp"
-            android:textColor="#0000FF"
+            android:textColor="#007500"
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:text="CART"/>

@@ -36,6 +36,9 @@
         <activity android:name=".ActivityMilkInfo"></activity>
         <activity android:name=".ActivityGhee"></activity>
         <activity android:name=".ActivityButter"></activity>
+        <activity android:name=".Dairy_List"></activity>
+        <activity android:name=".Snaks_List"></activity>
+        <activity android:name=".ActivityBynow"></activity>
 
 
 
